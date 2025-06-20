@@ -67,3 +67,12 @@ variable "database_routetable_tags" {
   type = map(string)
   default = {}
 }
+
+variable "isPeeringRequired" {
+  default = false
+}
+#It's optional - hence default set to blank to make it optional for users
+variable "vpc_peering_tags" {
+  type = map(string)
+  default = {}
+}
