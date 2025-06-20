@@ -47,3 +47,23 @@ variable "database_subnet_tags" {
   type = map(string)
   default = {}
 }
+#It's optional - hence default set to blank to make it optional for users
+variable "nat_gateway_tags" {
+  type = map(string)
+  default = {}
+}
+#It's optional - hence default set to blank to make it optional for users
+variable "public_routetable_tags" {
+  type = map(string)
+  default = {}
+}
+#It's optional - hence default set to blank to make it optional for users
+variable "private_routetable_tags" {
+  type = map(string)
+  default = {}
+}
+#It's optional - hence default set to blank to make it optional for users
+variable "database_routetable_tags" {
+  type = map(string)
+  default = {}
+}
